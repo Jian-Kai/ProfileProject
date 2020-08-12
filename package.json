@@ -1,0 +1,8 @@
+{
+  "name": "ProfileProject",
+  "version": "1.0.0",
+  "description": "My Profile Project",
+  "main": "index.js",
+  "author": "JianKai",
+  "license": "MIT"
+}

@@ -1,8 +1,15 @@
 import React from 'react';
-import style from '../../styles/index/styles.module.scss';
+import style from '@styles/index/styles.module.scss';
+import NavBar from '@components/NavBar';
+import links from '@public/links.json';
 
 const Index: React.FC = () => {
-  return <h1 className={style.title}>Wellcome to My Profile Site</h1>;
+  return (
+    <div>
+      <NavBar title="Jian-Kai" links={links.links} />
+      <h1 className={style.title}>Wellcome to My Profile Site</h1>
+    </div>
+  );
 };
 
 export default Index;

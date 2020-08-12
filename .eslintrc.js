@@ -1,3 +1,5 @@
+const { off } = require('process');
+
 module.exports = {
   env: {
     browser: true,
@@ -16,5 +18,6 @@ module.exports = {
   plugins: ['react', '@typescript-eslint'],
   rules: {
     '@typescript-eslint/no-var-requires': 'off',
+    'react/prop-types': 'off',
   },
 };

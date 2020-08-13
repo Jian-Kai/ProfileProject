@@ -1,16 +1,18 @@
 const path = require('path');
 
+const debug = process.env.NODE_ENV !== 'production';
+
 module.exports = {
-  async redirects() {
+  async rewrites() {
     return [
       {
         source: '/',
         destination: '/index',
-        permanent: true,
       },
     ];
   },
   sassOptions: {
     includePaths: [path.join(__dirname, 'styles')],
   },
+  assetPrefix: !debug ? '/ProfileProject/' : '',
 };

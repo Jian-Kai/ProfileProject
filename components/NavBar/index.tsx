@@ -2,7 +2,6 @@ import React from 'react';
 import style from './style.module.scss';
 import Link from 'next/link';
 import { useRouter } from 'next/router';
-import cx from 'classnames';
 
 interface I_NavBar {
   title: string;

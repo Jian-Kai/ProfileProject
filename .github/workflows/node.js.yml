@@ -11,6 +11,7 @@ jobs:
   build:
     name: Build and deploy gh-pages
     env:
+      commit_secret: ${{secrets.COMMIT_SECRET}}
       USER_NAME   : tony14256
       USER_EMAIL  : tony14256@gmail.com
     runs-on: ubuntu-latest
@@ -41,7 +42,7 @@ jobs:
           git config --global user.email tony14256@gmail.com
           git config --global user.name tony14256
           git status
-          git remote add origin https://github.com/tony14256/ProfileProject.git
+          git remote add origin https://${{secrets.COMMIT_SECRET}}@github.com/tony14256/ProfileProject.git
           git checkout -b gh-pages
           git add --all
           git commit -m "Deploy Next.js to gh-pages" 

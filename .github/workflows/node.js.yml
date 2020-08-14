@@ -31,5 +31,5 @@ jobs:
       - name: Next export
         run: yarn export
 
-      - name: devlop
-        run: yarn devlop
+      - name: deploy
+        run: yarn deploy

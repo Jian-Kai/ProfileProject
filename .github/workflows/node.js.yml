@@ -8,7 +8,7 @@ on:
     branches: [ master ]
 
 jobs:
-  Install Node:
+   install_node:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
@@ -18,7 +18,7 @@ jobs:
         with:
           node-version: '10.15.1'
           registry-url: 'https://registry.npmjs.org'
-  Install Dependencies: 
+  install_dependencies: 
     runs-on: ubuntu-latest
     steps:
       - name: Install Yarn
@@ -26,7 +26,7 @@ jobs:
       
       - name: Yarn Install
         run: yarn
-  Devlop: 
+  devlop: 
     runs-on: ubuntu-latest
     steps:
       - name: Next build

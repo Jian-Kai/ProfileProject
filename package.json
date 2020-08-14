@@ -5,6 +5,7 @@
   "main": "index.js",
   "author": "JianKai",
   "license": "MIT",
+  "homepage": "https://tony14256.github.io/ProfileProject",
   "scripts": {
     "dev": "next",
     "build": "next build",

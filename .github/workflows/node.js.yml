@@ -37,7 +37,7 @@ jobs:
 
       - name: deploy
         run: |
-          cd  out/
+          cd  ./out
           git init
           git config --local user.email $USER_NAME
           git config --local user.name $USER_EMAIL

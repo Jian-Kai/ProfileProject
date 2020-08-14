@@ -34,11 +34,6 @@ jobs:
 
       - name: Next export
         run: yarn export
-     
-      - name: setting git email
-        run: git config --global user.email $USER_EMAIL
-      - name: setting git user name
-        run: git config --global user.name $USER_NAME
 
       - name: deploy
         run: |
@@ -49,7 +44,7 @@ jobs:
           git status
           git remote add origin https://$MY_SECRET@github.com/$GITHUB_REPOSITORY.git
           git checkout -b gh-pages
-          git add --all
+          git add .
           git commit -m "deploy to Github pages"
           git push origin gh-pages -f
           echo 🤘 deploy gh-pages complete.

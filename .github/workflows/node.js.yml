@@ -10,7 +10,7 @@ on:
 jobs:
   install-node:
     env:
-      MY_SECRET   : ${{ secrets.commit_secret }}
+      MY_SECRET   : ${{ secrets.COMMIT_SECRET }}
       USER_NAME   : tony14256
       USER_EMAIL  : tony14256@gmail.com
     runs-on: ubuntu-latest
@@ -35,7 +35,8 @@ jobs:
           git config --local user.email $USER_NAME
           git config --local user.name $USER_EMAIL
           git status
-          git remote add origin https://$MY_SECRET@github.com/$GITHUB_REPOSITORY.git
+          echo https://$MY_SECRET@github.com/ProfileProject.git
+          git remote add origin https://$MY_SECRET@github.com/ProfileProject.git
           rm -rf node_modules/.cache
           yarn build
           yarn export

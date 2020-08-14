@@ -7,7 +7,7 @@ const Index: React.FC = () => {
   return (
     <div>
       <NavBar title="Jian-Kai" links={links.links} />
-      <h1 className={style.title}>Wellcome to My Profile Site 123</h1>
+      <h1 className={style.title}>Wellcome to My Profile Site 123456</h1>
     </div>
   );
 };

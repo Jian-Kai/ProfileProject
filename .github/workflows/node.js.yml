@@ -10,8 +10,8 @@ on:
 jobs:
   install-node:
     env:
-      USER_NAME   : ${{secrets.GIT_USERNAME}}
-      USER_EMAIL  : ${{secrets.GIT_EMAIL}}}
+      USER_NAME   : tony14256
+      USER_EMAIL  : tony14256@gmail.com
     runs-on: ubuntu-latest
     steps:
       - name: Checkout

@@ -10,7 +10,7 @@ on:
 jobs:
   install-node:
     env:
-      MY_SECRET   : ${{secrets.commit_secret}}
+      MY_SECRET   : ${{ secrets.commit_secret }}
       USER_NAME   : tony14256
       USER_EMAIL  : tony14256@gmail.com
     runs-on: ubuntu-latest

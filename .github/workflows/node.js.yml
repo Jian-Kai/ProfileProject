@@ -30,6 +30,11 @@ jobs:
 
       - name: Next export
         run: yarn export
+     
+      - name: setting git email
+        run: git config --global user.email ${{secrets.GIT_EMAIL}}}
+      - name: setting git user name
+        run: git config --global user.name ${{secrets.GIT_USERNAME}}}
 
       - name: deploy
         run: yarn deploy

@@ -29,12 +29,6 @@ jobs:
       - name: Yarn Install
         run: yarn
 
-      - name: Next build
-        run: yarn build
-
-      - name: Next export
-        run: yarn export
-
       - name: deploy
         run: |
           git init
@@ -43,6 +37,8 @@ jobs:
           git status
           git remote add origin https://$MY_SECRET@github.com/$GITHUB_REPOSITORY.git
           rm -rf node_modules/.cache
+          yarn build
+          yarn export
           touch out/.nojekyll
           git add out/ 
           git commit -m \"Deploy Next.js to gh-pages\" 

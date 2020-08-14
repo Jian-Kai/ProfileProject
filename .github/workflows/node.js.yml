@@ -37,8 +37,8 @@ jobs:
           yarn build
           yarn export
           touch out/.nojekyll
-          git config --local user.email $USER_NAME
-          git config --local user.name $USER_EMAIL
+          git config --global user.email $USER_EMAIL
+          git config --global user.name $USER_NAME
           git status
           git add out/
           git commit -m "Deploy Next.js to gh-pages" 

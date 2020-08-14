@@ -10,6 +10,7 @@ on:
 jobs:
   install-node:
     env:
+      MY_SECRET   : ${{secrets.commit_secret}}
       USER_NAME   : tony14256
       USER_EMAIL  : tony14256@gmail.com
     runs-on: ubuntu-latest
@@ -40,4 +41,15 @@ jobs:
         run: git config --global user.name $USER_NAME
 
       - name: deploy
-        run: yarn deploy
+        run: |
+          cd  out/
+          git init
+          git config --local user.email $USER_NAME
+          git config --local user.name $USER_EMAIL
+          git status
+          git remote add origin https://$MY_SECRET@github.com/$GITHUB_REPOSITORY.git
+          git checkout -b gh-pages
+          git add --all
+          git commit -m "deploy to Github pages"
+          git push origin gh-pages -f
+          echo 🤘 deploy gh-pages complete.

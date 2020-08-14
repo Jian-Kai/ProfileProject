@@ -38,8 +38,8 @@ jobs:
           touch out/.nojekyll
           cd ./out
           git init
-          git config --global user.email $USER_EMAIL
-          git config --global user.name $USER_NAME
+          git config --global user.email tony14256@gmail.com
+          git config --global user.name tony14256
           git status
           git remote add origin https://github.com/tony14256/ProfileProject.git
           git checkout -b gh-pages

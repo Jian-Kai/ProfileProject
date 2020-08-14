@@ -8,12 +8,14 @@ on:
     branches: [master]
 
 jobs:
-  install-node:
+  build:
+    name: Build and deploy gh-pages
     env:
       MY_SECRET   : ${{ secrets.COMMIT_SECRET }}
       USER_NAME   : tony14256
       USER_EMAIL  : tony14256@gmail.com
     runs-on: ubuntu-latest
+    
     steps:
       - name: Checkout
         uses: actions/checkout@v1

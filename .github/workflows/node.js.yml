@@ -21,6 +21,9 @@ jobs:
    install-dependencies: 
     runs-on: ubuntu-latest
     steps:
+      - name: Checkout
+        uses: actions/checkout@v1
+        
       - name: Install Yarn
         run: npm install -g yarn
       
@@ -29,6 +32,9 @@ jobs:
    devlop: 
     runs-on: ubuntu-latest
     steps:
+      - name: Checkout
+        uses: actions/checkout@v1
+        
       - name: Next build
         run: yarn build
         

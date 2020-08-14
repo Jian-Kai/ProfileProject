@@ -10,6 +10,9 @@ on:
 jobs:
   install-node:
     runs-on: ubuntu-latest
+    env:
+      USER_NAME   : ${{secrets.GIT_USERNAME}}
+      USER_EMAIL  : ${{secrets.GIT_EMAIL}}}
     steps:
       - name: Checkout
         uses: actions/checkout@v1
@@ -32,9 +35,9 @@ jobs:
         run: yarn export
      
       - name: setting git email
-        run: git config --global user.email ${{secrets.GIT_EMAIL}}}
+        run: git config --global user.email $USER_EMAIL
       - name: setting git user name
-        run: git config --global user.name ${{secrets.GIT_USERNAME}}}
+        run: git config --global user.name $USER_NAME
 
       - name: deploy
         run: yarn deploy

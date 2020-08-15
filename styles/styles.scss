@@ -1,9 +1,10 @@
+@import '@styles/variables.scss';
+@import '@styles/font-size.scss';
+// @import '@styles/color.scss';
+
 * {
   margin: 0;
   padding: 0;
-}
-
-body {
   box-sizing: border-box;
 }
 

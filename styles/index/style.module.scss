@@ -1,0 +1,32 @@
+.Brief {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  .Avatar {
+    padding: 20px 0;
+  }
+  .Content {
+    padding: 20px;
+    > * {
+      display: block;
+      width: 100%;
+    }
+    > h2,
+    .social {
+      margin: 40px 0;
+    }
+    .info,
+    .social {
+      padding: 0 20px;
+      margin-bottom: 0;
+    }
+
+    .social {
+      display: block;
+      > a {
+        display: inline-flex;
+        margin-right: 20px;
+      }
+    }
+  }
+}

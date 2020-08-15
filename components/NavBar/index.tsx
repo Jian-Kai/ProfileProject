@@ -13,9 +13,9 @@ const Index: React.FC<I_NavBar> = (props) => {
   const { pathname } = useRouter();
 
   return (
-    <div className={style.NavBar}>
-      <h1 className={style.Title}>{title}</h1>
-      <div className={style.Bar}>
+    <nav className={style.NavBar}>
+      <h1 className={`${style.Title} F40`}>{title}</h1>
+      <div className={`${style.Bar} F20`}>
         {links.map((link, idx) => {
           const active = link.url === pathname ? style.active : '';
           return (
@@ -25,7 +25,7 @@ const Index: React.FC<I_NavBar> = (props) => {
           );
         })}
       </div>
-    </div>
+    </nav>
   );
 };
 

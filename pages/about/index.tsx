@@ -1,6 +1,6 @@
 import React from 'react';
 import Haed from 'next/head';
-import style from '@styles/index/styles.module.scss';
+import style from '@styles/index/style.module.scss';
 import NavBar from '@components/NavBar';
 import links from '@public/links.json';
 

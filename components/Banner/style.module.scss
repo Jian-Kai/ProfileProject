@@ -1,7 +1,6 @@
 @import '@styles/variables.scss';
 
 .Banner {
-  margin-bottom: 50px;
   background: no-repeat center center;
   background-color: #868e96;
   background-attachment: scroll;
@@ -16,10 +15,11 @@
     background-color: #212529;
     opacity: 0.5;
   }
-  .Container {
+  .Title {
     position: relative;
     width: 100%;
-    padding: 150px 0;
+    padding-top: 100px;
+    padding-bottom: 50px;
     margin-right: auto;
     margin-left: auto;
     z-index: 10;

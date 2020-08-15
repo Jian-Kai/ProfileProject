@@ -1,0 +1,15 @@
+.Avatar {
+  border-radius: 50%;
+  border: 10px solid #eee;
+  > img {
+    border-radius: inherit;
+    object-fit: cover;
+    width: auto;
+    height: auto;
+    max-width: 100%;
+    max-height: 100%;
+  }
+  &.rect {
+    border-radius: 0;
+  }
+}

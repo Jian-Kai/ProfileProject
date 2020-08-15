@@ -13,6 +13,6 @@ module.exports = withImage({
       '/about': { page: '/about' },
     };
   },
-  trailingSlash: true,
+  trailingSlash: false,
   assetPrefix: !debug ? '/ProfileProject/' : '',
 });

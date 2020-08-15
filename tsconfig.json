@@ -21,7 +21,8 @@
     "paths": {
       "@components/*": ["components/*"],
       "@styles/*": ["styles/*"],
-      "@public/*": ["public/*"]
+      "@public/*": ["public/*"],
+      "@svgs/*": ["svgs/*"]
     }
   },
   "exclude": ["node_modules"],

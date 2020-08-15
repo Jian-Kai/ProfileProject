@@ -11,9 +11,8 @@
       display: block;
       width: 100%;
     }
-    > h2,
-    .social {
-      margin: 40px 0;
+    > h2 {
+      margin: 35px 0;
     }
     .info,
     .social {
@@ -21,8 +20,14 @@
       margin-bottom: 0;
     }
 
+    .info {
+      line-height: 1.5;
+      margin: 5px;
+    }
+
     .social {
       display: block;
+      padding: 10px 0;
       > a {
         display: inline-flex;
         margin-right: 20px;

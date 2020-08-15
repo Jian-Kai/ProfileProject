@@ -21,11 +21,9 @@ const Index: React.FC = () => {
           </div>
           <div className={style.Content}>
             <h2 className="F40">郭建凱</h2>
-            <p className={`${style.info} F16`}>
-              大學時期的畢業專題，在網頁上設計了線上點餐系統，對於開發網站萌生了興趣。碩士的研究領域為Data
-              Visualization，畢業論文以蒐集Facebook上粉絲專業上的貼文資料，並且在網頁上透過視覺化的呈現方式。
-              平時除了會進修自身程式實作的能力外，假日時也會下廚、出外踏青、看電影小說、與朋友聚餐…等等。
-            </p>
+            <p className={`${style.info} F16`}>大學時期的畢業專題，在網頁上設計了線上點餐系統，對於開發網站萌生了興趣。</p>
+            <p className={`${style.info} F16`}>碩士的研究領域為Data Visualization，畢業論文以蒐集Facebook上粉絲專業上的貼文資料，並且在網頁上透過視覺化的呈現方式。</p>
+            <p className={`${style.info} F16`}>平時除了會進修自身程式實作的能力外，假日時也會下廚、出外踏青、看電影小說、與朋友聚餐…等等。</p>
             <div className={style.social}>
               <a href="#">
                 <Icons name="Facebook" />

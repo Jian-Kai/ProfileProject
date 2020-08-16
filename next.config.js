@@ -13,6 +13,7 @@ module.exports = withImage({
       '/Experience': { page: '/experience' },
     };
   },
+  basePath: !debug ? '/ProfileProject' : '',
   trailingSlash: false,
   assetPrefix: !debug ? '/ProfileProject/' : '',
 });

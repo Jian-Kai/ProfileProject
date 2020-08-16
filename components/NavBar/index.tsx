@@ -7,7 +7,6 @@ interface I_NavBar {
   title: string;
   links: { text: string; url: string }[];
 }
-
 const Index: React.FC<I_NavBar> = (props) => {
   const { title, links } = props;
   const { pathname } = useRouter();

@@ -10,7 +10,7 @@ module.exports = withImage({
   exportPathMap: async function () {
     return {
       '/': { page: '/index' },
-      '/about': { page: '/about' },
+      '/Experience': { page: '/experience' },
     };
   },
   trailingSlash: false,

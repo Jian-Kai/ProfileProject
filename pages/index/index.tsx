@@ -1,4 +1,5 @@
 import React from 'react';
+import Haed from 'next/head';
 import style from '@styles/index/style.module.scss';
 import NavBar from '@components/NavBar';
 import Banner from '@components/Banner';
@@ -11,7 +12,10 @@ import meImg from '@public/Me.jpg';
 
 const Index: React.FC = () => {
   return (
-    <div>
+    <React.Fragment>
+      <Haed>
+        <title>About Me</title>
+      </Haed>
       <NavBar title="Jian-Kai" links={links.links} />
       <Banner backImg={bannerImg} mainTitle="Wellcome" subTitle="My Name is Jian-Kai,Kuo" />
       <Container>
@@ -38,7 +42,7 @@ const Index: React.FC = () => {
           </div>
         </section>
       </Container>
-    </div>
+    </React.Fragment>
   );
 };
 

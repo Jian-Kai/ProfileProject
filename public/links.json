@@ -1,6 +1,6 @@
 {
   "links": [
-    { "text": "Home", "url": "/index" },
-    { "text": "About", "url": "/about" }
+    { "text": "About", "url": "/index" },
+    { "text": "Experience", "url": "/experience" }
   ]
 }

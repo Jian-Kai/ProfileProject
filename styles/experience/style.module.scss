@@ -1,0 +1,17 @@
+@import '@styles/variables.scss';
+
+.ExpCard {
+  padding: 10px;
+  padding-left: 30px;
+  .header {
+    display: flex;
+    justify-content: space-between;
+    margin: 25px 0;
+    .company {
+      font-weight: 800;
+    }
+    .period {
+      color: $linkColor;
+    }
+  }
+}

@@ -28,7 +28,7 @@ const ExpCard: React.FC<I_ExpCard> = (props) => {
         <span className={style.company}>{`${data.company} - ${data.position}`}</span>
         <span className={style.period}>{period}</span>
       </div>
-      <div>
+      <div className={style.desp}>
         {data.desp.map((d, idx) => (
           <p key={`${data.company}_desp_${idx}`}>{d}</p>
         ))}
@@ -46,7 +46,7 @@ const Index: React.FC = () => {
       <NavBar title="Jian-Kai" links={links.links} />
       <Banner backImg={bannerImg} mainTitle="My Experience" subTitle="I am a Web Developer" />
       <Container>
-        <h1>經歷</h1>
+        <h1>學經歷</h1>
         {experience.map((exp, idx) => {
           return <ExpCard key={`${idx}_${exp.company}_${exp.position}`} data={exp} />;
         })}

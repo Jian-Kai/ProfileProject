@@ -1,8 +1,9 @@
 @import '@styles/variables.scss';
 
 .ExpCard {
-  padding: 10px;
-  padding-left: 30px;
+  padding: 10px 30px;
+  padding-bottom: 40px;
+  border-bottom: 2px solid #000;
   .header {
     display: flex;
     justify-content: space-between;
@@ -12,6 +13,12 @@
     }
     .period {
       color: $linkColor;
+    }
+  }
+  .desp {
+    margin: 0 30px;
+    > p {
+      line-height: 1.5;
     }
   }
 }

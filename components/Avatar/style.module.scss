@@ -1,6 +1,8 @@
+@import '@styles/variables.scss';
+
 .Avatar {
   border-radius: 50%;
-  border: 10px solid #eee;
+  border: 10px solid $auxiliary;
   > img {
     border-radius: inherit;
     object-fit: cover;

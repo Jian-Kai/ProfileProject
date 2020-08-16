@@ -45,8 +45,7 @@ const Index: React.FC = () => {
       </Haed>
       <NavBar title="Jian-Kai" links={links.links} />
       <Banner backImg={bannerImg} mainTitle="My Experience" subTitle="I am a Web Developer" />
-      <Container>
-        <h1>學經歷</h1>
+      <Container title="學經歷">
         {experience.map((exp, idx) => {
           return <ExpCard key={`${idx}_${exp.company}_${exp.position}`} data={exp} />;
         })}

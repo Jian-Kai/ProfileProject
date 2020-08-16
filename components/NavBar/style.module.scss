@@ -16,7 +16,8 @@
 .Title {
   grid-area: grid-title;
   text-align: center;
-  color: $white;
+  color: $primary;
+  text-shadow: 4px 4px 2px $transparent;
 }
 
 .Bar {
@@ -25,13 +26,13 @@
   justify-content: flex-end;
   padding-right: 70px;
   > a {
-    color: $linkColor;
+    color: $white;
     padding: 10px 20px;
     &:hover {
-      color: $white;
+      color: $auxiliary2;
     }
     &.active {
-      color: $white;
+      color: $auxiliary2;
     }
   }
 }

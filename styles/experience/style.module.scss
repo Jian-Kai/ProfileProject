@@ -3,16 +3,31 @@
 .ExpCard {
   padding: 10px 30px;
   padding-bottom: 40px;
-  border-bottom: 2px solid #000;
+  border-bottom: 2px solid $auxiliary;
   .header {
     display: flex;
     justify-content: space-between;
     margin: 25px 0;
     .company {
       font-weight: 800;
+      position: relative;
+      padding-left: 20px;
+      &::before {
+        content: '';
+        display: block;
+        width: 10px;
+        height: 10px;
+        background-color: $primary;
+        border-radius: 50%;
+        border: 1px solid $primary;
+        position: absolute;
+        transform: translateY(-50%);
+        top: 50%;
+        left: -20px;
+      }
     }
     .period {
-      color: $linkColor;
+      color: $auxiliary2;
     }
   }
   .desp {

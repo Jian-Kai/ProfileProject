@@ -18,8 +18,7 @@ const Index: React.FC = () => {
       </Haed>
       <NavBar title="Jian-Kai" links={links.links} />
       <Banner backImg={bannerImg} mainTitle="Wellcome" subTitle="My Name is Jian-Kai,Kuo" />
-      <Container>
-        <h1>關於我</h1>
+      <Container title="關於我">
         <section className={style.Brief}>
           <div className={style.Avatar}>
             <Avatar img={meImg} size={240} />

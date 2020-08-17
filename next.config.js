@@ -14,6 +14,5 @@ module.exports = withImage({
     };
   },
   basePath: !debug ? '/ProfileProject' : '',
-  trailingSlash: false,
   assetPrefix: !debug ? '/ProfileProject/' : '',
 });

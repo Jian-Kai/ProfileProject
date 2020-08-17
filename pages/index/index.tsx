@@ -33,13 +33,10 @@ const Index: React.FC = () => {
               平時除了會進修自身程式實作的能力外，假日時也會下廚、出外踏青、看電影小說、與朋友聚餐…等等。
             </p>
             <div className={style.social}>
-              <a href="#">
-                <Icons name="Facebook" />
-              </a>
-              <a href="">
+              <a href="//github.com/tony14256" target="blank">
                 <Icons name="Github" />
               </a>
-              <a href="">
+              <a href="//www.linkedin.com/in/jiankaikuo" target="blank">
                 <Icons name="Linkedin" />
               </a>
             </div>

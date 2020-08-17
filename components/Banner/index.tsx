@@ -10,9 +10,6 @@ interface I_Banner {
 const Index: React.FC<I_Banner> = (props) => {
   const { backImg, mainTitle, subTitle } = props;
 
-  React.useEffect(() => {
-    console.log(backImg);
-  }, []);
   return (
     <header className={style.Banner} style={{ backgroundImage: `url(${backImg})` }}>
       <div className={style.Overlay}></div>

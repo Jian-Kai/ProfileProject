@@ -18,6 +18,7 @@
   text-align: center;
   color: $primary;
   text-shadow: 4px 4px 2px $transparent;
+  font-size: 4rem;
 }
 
 .Bar {
@@ -26,6 +27,7 @@
   justify-content: flex-end;
   padding-right: 70px;
   > a {
+    font-size: 2rem;
     color: $white;
     padding: 10px 20px;
     &:hover {

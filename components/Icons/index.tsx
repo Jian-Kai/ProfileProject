@@ -8,11 +8,11 @@ interface I_Icons {
 }
 
 const Index: React.FC<I_Icons> = (props) => {
-  const { name, size = 50 } = props;
-  const Component = Svgs[name];
+  const { name, size = 5 } = props;
+  const Component: ({ size }: { size: number }) => JSX.Element = Svgs[name];
   return (
-    <span className={style.Icon} style={{ fontSize: `${size}px` }}>
-      <Component />
+    <span className={style.Icon}>
+      <Component size={size} />
     </span>
   );
 };

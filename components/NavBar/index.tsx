@@ -13,8 +13,8 @@ const Index: React.FC<I_NavBar> = (props) => {
 
   return (
     <nav className={style.NavBar}>
-      <h1 className={`${style.Title} F40`}>{title}</h1>
-      <div className={`${style.Bar} F20`}>
+      <h1 className={`${style.Title}`}>{title}</h1>
+      <div className={`${style.Bar}`}>
         {links.map((link, idx) => {
           const active = link.url === pathname ? style.active : '';
           return (

@@ -14,8 +14,8 @@ const Index: React.FC<I_Banner> = (props) => {
     <header className={style.Banner} style={{ backgroundImage: `url(${backImg})` }}>
       <div className={style.Overlay}></div>
       <div className={style.Title}>
-        <h1 className="F80">{mainTitle}</h1>
-        <span className="F20">{subTitle}</span>
+        <h1>{mainTitle}</h1>
+        <span>{subTitle}</span>
       </div>
     </header>
   );

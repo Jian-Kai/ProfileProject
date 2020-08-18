@@ -1,0 +1,33 @@
+@import '@styles/variables.scss';
+
+.skills {
+  display: flex;
+  flex-wrap: wrap;
+
+  .skillBlock {
+    flex: 1 1 calc(50% - 20px);
+    margin: 0 10px;
+    border: 1px solid $auxiliary2;
+    border-radius: 0.5rem;
+    > span {
+      font-size: 2.5rem;
+      display: block;
+      width: 100%;
+      text-align: center;
+      padding: 20px 0;
+      background-image: linear-gradient(120deg, $auxiliary 0%, $auxiliary2 100%);
+      color: $white;
+      font-weight: 800;
+    }
+    > ul {
+      margin: 10px 0;
+    }
+    .skill {
+      display: inline-block;
+      width: calc(100% / 3);
+      padding: 10px 0;
+      text-align: center;
+      font-size: 1.4rem;
+    }
+  }
+}

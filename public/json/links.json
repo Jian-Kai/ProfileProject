@@ -1,6 +1,7 @@
 {
   "links": [
     { "text": "About", "url": "/index", "as": "/" },
-    { "text": "Experience", "url": "/experience" }
+    { "text": "Experience", "url": "/experience" },
+    { "text": "Skill", "url": "/skill" }
   ]
 }

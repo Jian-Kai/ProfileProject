@@ -1,0 +1,41 @@
+{
+  "skill": [
+    {
+      "name": "前端技術",
+      "list": [
+        {
+          "name": "Html5"
+        },
+        {
+          "name": "Javascript"
+        },
+        {
+          "name": "Scss"
+        },
+        {
+          "name": "NextJS"
+        },
+        {
+          "name": "React"
+        },
+        {
+          "name": "Redux"
+        }
+      ]
+    },
+    {
+      "name": "後端技術",
+      "list": [
+        {
+          "name": "NodeJS"
+        },
+        {
+          "name": "GraphQL"
+        },
+        {
+          "name": "Golang"
+        }
+      ]
+    }
+  ]
+}

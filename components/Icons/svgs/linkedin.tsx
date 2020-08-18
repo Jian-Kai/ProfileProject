@@ -1,8 +1,16 @@
 import React from 'react';
-
-const Index = () => {
+const Index = ({ size }: { size: number }) => {
   return (
-    <svg version="1.1" id="Capa_1" width="1em" height="1em" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 512 512">
+    <svg
+      version="1.1"
+      id="Capa_1"
+      width={`${size}rem`}
+      height={`${size}rem`}
+      xmlns="http://www.w3.org/2000/svg"
+      x="0px"
+      y="0px"
+      viewBox="0 0 512 512"
+    >
       <g>
         <rect y="160" fill="#1976D2" width="114.496" height="352" />
         <path

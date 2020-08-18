@@ -26,5 +26,5 @@
     }
   },
   "exclude": ["node_modules"],
-  "include": ["**/*.ts", "**/*.tsx", "types/*"]
+  "include": ["**/*.ts", "**/*.tsx", "typings/*"]
 }

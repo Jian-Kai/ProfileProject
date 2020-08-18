@@ -36,6 +36,17 @@
           "name": "Golang"
         }
       ]
+    },
+    {
+      "name": "資料庫相關",
+      "list": [
+        {
+          "name": "MySQL"
+        },
+        {
+          "name": "MongoDB"
+        }
+      ]
     }
   ]
 }

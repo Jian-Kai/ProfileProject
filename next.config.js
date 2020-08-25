@@ -12,6 +12,7 @@ module.exports = withImage({
       '/': { page: '/index' },
       '/experience': { page: '/experience' },
       '/skill': { page: '/skill' },
+      '/portfolio': { page: '/portfolio' },
     };
   },
   basePath: !debug ? '/ProfileProject' : '',

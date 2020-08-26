@@ -3,7 +3,7 @@
     {
       "title": "instagram-clone",
       "banner": "/img/home-banner.jpg",
-      "desp": "Clone UI from Instagram can login and post on firebase.",
+      "desp": "Clone UI of Instagram that can login and post on firebase.",
       "use": ["ReactJS", "styled-components", "firebase"]
     },
     {

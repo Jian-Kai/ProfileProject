@@ -2,6 +2,7 @@
   "links": [
     { "text": "About", "url": "/index", "as": "/" },
     { "text": "Experience", "url": "/experience" },
-    { "text": "Skill", "url": "/skill" }
+    { "text": "Skill", "url": "/skill" },
+    { "text": "Portfolio", "url": "/portfolio" }
   ]
 }

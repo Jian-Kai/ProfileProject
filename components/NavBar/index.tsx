@@ -10,20 +10,9 @@ interface I_NavBar {
 const Index: React.FC<I_NavBar> = (props) => {
   const { title, links } = props;
   const { pathname } = useRouter();
-  const navRef = React.useRef<HTMLElement>(null);
-
-  React.useEffect(() => {
-    const scroll = (e) => {
-      console.log(navRef.current.scrollTop);
-    };
-    window.addEventListener('scroll', scroll);
-    return () => {
-      window.removeEventListener('scroll', scroll);
-    };
-  }, []);
 
   return (
-    <nav ref={navRef} className={style.NavBar}>
+    <nav className={style.NavBar}>
       <h1 className={`${style.Title}`}>{title}</h1>
       <div className={`${style.Bar}`}>
         {links.map((link, idx) => {

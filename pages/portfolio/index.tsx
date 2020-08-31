@@ -10,18 +10,21 @@ import { works } from '@public/json/portfolio.json';
 
 interface I_Work {
   title: string;
+  href: string;
   banner: string;
   desp: string;
   use: string[];
 }
 
 const Work: React.FC<I_Work> = (props) => {
-  const { title, banner, desp, use } = props;
+  const { title, href, banner, desp, use } = props;
   return (
     <div className={style.work}>
       <div className={style.overlay}>
         <div className={style.desp}>
-          <h2 className={style.title}>{title}</h2>
+          <a href={href} target="blank">
+            <h2 className={style.title}>{title}</h2>
+          </a>
           <span>{desp}</span>
           <div className={style.skill}>
             <span>技術</span>

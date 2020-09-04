@@ -1,0 +1,61 @@
+{
+  "skill": [
+    {
+      "name": "前端技術",
+      "list": [
+        {
+          "name": "Html5"
+        },
+        {
+          "name": "Javascript"
+        },
+        {
+          "name": "Sass"
+        },
+        {
+          "name": "NextJS"
+        },
+        {
+          "name": "React"
+        },
+        {
+          "name": "Redux"
+        },
+        {
+          "name": "Styled-Components"
+        }
+      ]
+    },
+    {
+      "name": "後端技術",
+      "list": [
+        {
+          "name": "NodeJS"
+        },
+        {
+          "name": "GraphQL"
+        },
+        {
+          "name": "Golang"
+        },
+        {
+          "name": "PHP"
+        }
+      ]
+    },
+    {
+      "name": "資料庫相關",
+      "list": [
+        {
+          "name": "MySQL"
+        },
+        {
+          "name": "MongoDB"
+        },
+        {
+          "name": "Redis"
+        }
+      ]
+    }
+  ]
+}
